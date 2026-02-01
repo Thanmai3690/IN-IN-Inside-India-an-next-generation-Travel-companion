@@ -142,25 +142,23 @@ export function HomePage() {
   ];
 
   const destinations = [
-    {
-      state: "goa",
-      image:
-        "src/app/pages/goa.jpeg",
-    },
-    {
-      state: "rajasthan",
-      image:
-        "src/app/pages/rajasthan.jpeg",
-    },
-    {
-      state: "himachal-pradesh",
-      image:"src/app/pages/himachal.jpeg",
-    },
-    {
-      state: "andhra-pradesh",
-      image:"src/app/pages/andhra.jpeg",
-    },
-  ];
+  {
+    state: "goa",
+    image: "/images/goa.jpeg",
+  },
+  {
+    state: "rajasthan",
+    image: "/images/rajasthan.jpeg",
+  },
+  {
+    state: "himachal-pradesh",
+    image: "/images/himachal.jpeg",
+  },
+  {
+    state: "andhra-pradesh",
+    image: "/images/andhra.jpeg",
+  },
+];
 
   const testimonials = [
     {
@@ -251,7 +249,7 @@ export function HomePage() {
             className="mt-16 rounded-2xl overflow-hidden shadow-2xl"
           >
             <img
-              src="src/app/pages/img1.jpeg"
+              src="/images/img1.jpeg"
               alt="India"
               className="w-full h-[400px] object-cover"
             />

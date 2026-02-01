@@ -30,7 +30,7 @@ export function PhotoSpotsPage() {
       location: "RK-Beach",
       city: "Vizag, Andhra Pradesh",
       image:
-        "src/app/pages/rk.jpeg",
+        "/images/rk.jpeg",
       bestTime: "Sunrise",
       timeIcon: Sunrise,
       exactTime: "5:30 AM - 7:00 AM",
@@ -51,7 +51,7 @@ export function PhotoSpotsPage() {
       location: "Cabo de Rama Fort",
       city: "South Goa, Goa",
       image:
-        "src/app/pages/goafort.jpeg",
+        "/images/goafort.jpeg",
       bestTime: "Evening",
       timeIcon: Sunset,
       exactTime: "4:30 PM - 6:00 PM",
@@ -73,7 +73,7 @@ export function PhotoSpotsPage() {
       location: "Sam Sand Dunes",
       city: "Jaisalmer, Rajasthan",
       image:
-        "src/app/pages/sandraj.jpeg",
+        "/images/sandraj.jpeg",
       bestTime: "Evening",
       timeIcon: Sunset,
       exactTime: "5:30 PM - 6:45 PM",
@@ -94,7 +94,7 @@ export function PhotoSpotsPage() {
       location: "Solang Valley View Point",
       city: "Manali, Shimla",
       image:
-        "src/app/pages/solang.jpeg",
+        "/images/solang.jpeg",
       bestTime: "Morning",
       timeIcon: Sun,
       exactTime: "8:00 AM - 10:00 AM",

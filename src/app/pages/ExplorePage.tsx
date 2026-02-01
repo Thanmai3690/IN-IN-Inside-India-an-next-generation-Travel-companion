@@ -75,6 +75,7 @@ export function ExplorePage() {
                 />
               </div>
             </div>
+            
 
             {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-3">

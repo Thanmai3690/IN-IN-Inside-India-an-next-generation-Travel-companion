@@ -29,7 +29,7 @@ export function SouvenirsPage() {
       name: "Himachal Woolens(Caps,Gloves & Mufflers)",
       location: " Shimla Road,Himachal pradesh",
       image:
-        " src/app/pages/hwo.jpeg",
+        " /images/hwo.jpeg",
       price: "₹200-₹800",
       category: "Clothing & Accessories ",
       perfectFor: "Family,Friends,Winter Travelers",   
@@ -46,7 +46,7 @@ export function SouvenirsPage() {
       name: "Jaipur Pottery Items",
       location: "Chandpole(chandpol) bazar,Jaipur",
       image:
-        "src/app/pages/jaipot.jpeg",
+        "/images/jaipot.jpeg",
       price: "₹200-₹1500",
       category: "Home Decor & Handicrafts",
       perfectFor: "Friends,Family, Siblings, Home decor Lovers",
@@ -63,7 +63,7 @@ export function SouvenirsPage() {
       name: "Shell&Sea-Themed Ornaments",
       location: "Beach Road Stalls,Goa",
       image:
-        "src/app/pages/goac.jpeg",
+        "/images/goac.jpeg",
       price: "₹50-₹300",
       category: "Handicrafts & Decor",
       perfectFor: "Friends,Family,Home Decor Lovers",
@@ -80,7 +80,7 @@ export function SouvenirsPage() {
       name: "Araku Valley Fresh Roasted Coffee Beans",
       location: "Araku valley local markets and coffee outlets near the tribal musesum",
       image:
-        "src/app/pages/cofeearaku.jpeg",
+        "/images/cofeearaku.jpeg",
       price: "₹300-₹1200",
       category: "Food & Beverages",
       perfectFor: "Coffee Lovers, Friends, Office Colleagues",

@@ -15,7 +15,7 @@ Travelers reach destinations but miss meaningful connections.
 
   # Simple Architecture design
 
-![Architecture Diagram](src/assets/architecture.jpeg)
+![Architecture Diagram](public/images/architecture.jpeg)
 
   # Tech Stack
 
