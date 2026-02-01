@@ -26,76 +26,71 @@ export function SouvenirsPage() {
   const souvenirs = [
     {
       id: "1",
-      name: "Handcrafted Ceramic Tea Set",
-      location: " Japan",
+      name: "Himachal Woolens(Caps,Gloves & Mufflers)",
+      location: " Shimla Road,Himachal pradesh",
       image:
-        "https://images.unsplash.com/photo-1703756292798-b60d54d57094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMGNyYWZ0cyUyMHBvdHRlcnklMjBjZXJhbWljc3xlbnwxfHx8fDE3Njk4NjMwOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      price: "$45-80",
-      category: "Crafts",
-      perfectFor: ", Parents, Grandparents",
+        " src/app/pages/hwo.jpeg",
+      price: "₹200-₹800",
+      category: "Clothing & Accessories ",
+      perfectFor: "Family,Friends,Winter Travelers",   
       whyMeaningful:
-        "Each piece is handmade by local artisans using centuries-old techniques. It's not just a tea set - it's a piece of Japanese culture and craftsmanship.",
-      whereToFind: "Kiyomizu-dera Temple shops, Nishiki Market",
+        "These Woolean items are made forcold mountain weather and are very useful for daily wear.",
       culturalNote:
-        "In Japan, tea ceremonies symbolize harmony and respect - giving this shows you value these qualities in the recipient.",
+        "Himachal Woolens reflect local hill culture and traditional winter clothing.",
       difficulty: "Easy to find",
-      rating: 4.9,
+      rating: 4.7,
       loveFactor: 5,
     },
     {
       id: "2",
-      name: "Provence Lavender Soap & Honey Set",
-      location: "Provence, France",
+      name: "Jaipur Pottery Items",
+      location: "Chandpole(chandpol) bazar,Jaipur",
       image:
-        "https://images.unsplash.com/photo-1726491490918-858d8e3f7d76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBsYXZlbmRlciUyMHNvYXAlMjBwcm92ZW5jZXxlbnwxfHx8fDE3Njk4NjMwOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      price: "$25-40",
-      category: "Beauty & Wellness",
-      perfectFor: "Friends, Siblings, Spa Lovers",
-      whyMeaningful:
-        "Made with lavender from the iconic purple fields of Provence. The scent will transport them to the French countryside every time they use it.",
-      whereToFind: "Local markets in Gordes, L'Occitane boutiques",
+        "src/app/pages/jaipot.jpeg",
+      price: "₹200-₹1500",
+      category: "Home Decor & Handicrafts",
+      perfectFor: "Friends,Family, Siblings, Home decor Lovers",
+      whySpecial:
+        "Each piece is handcrafted by local Jaipur artisans with traditional designs and Vibrant colors.",
       culturalNote:
-        "Lavender has been used in Provence for centuries for relaxation and healing - share this tradition of self-care.",
+        "Jaipur pottery reflects Rajasthan's rich artistic heritage and Centuries-old craftmanship",
       difficulty: "Easy to find",
-      rating: 4.8,
-      loveFactor: 4,
+      rating: 4.7,
+      loveFactor: 5,
     },
     {
       id: "3",
-      name: "Artisan Leather Journal",
-      location: "Florence, Italy",
+      name: "Shell&Sea-Themed Ornaments",
+      location: "Beach Road Stalls,Goa",
       image:
-        "https://images.unsplash.com/photo-1639164667234-200763ac8cc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwbGVhdGhlciUyMGhhbmRiYWclMjBhcnRpc2FufGVufDF8fHx8MTc2OTg2MzA5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      price: "$60-120",
-      category: "Crafts",
-      perfectFor: "Writers, Students, Creative Souls",
-      whyMeaningful:
-        "Handmade using traditional Florentine leather-working techniques passed down for generations. Can be personalized with initials.",
-      whereToFind:
-        "Oltrarno artisan district, Mercato del Porcellino area",
+        "src/app/pages/goac.jpeg",
+      price: "₹50-₹300",
+      category: "Handicrafts & Decor",
+      perfectFor: "Friends,Family,Home Decor Lovers",
+      whySpecial:
+        "These ornaments are made from Sea shells and remind you of Goa's beaches and ocean.",
       culturalNote:
-        "Florence has been the leather capital of Italy since the Renaissance - this gift carries centuries of artisan tradition.",
-      difficulty: "Moderate",
-      rating: 5.0,
+        "Shell Crafts are a popular coastal souvenir and reflect Goa's beach life",
+      difficulty: "Very easy",
+      rating: 4.5,
       loveFactor: 5,
     },
     {
       id: "4",
-      name: "Traditional Spice Blend Collection",
-      location: "Marrakech, Morocco",
+      name: "Araku Valley Fresh Roasted Coffee Beans",
+      location: "Araku valley local markets and coffee outlets near the tribal musesum",
       image:
-        "https://images.unsplash.com/photo-1761255240953-c571ba0b98d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3JvY2NhbiUyMHNwaWNlcyUyMG1hcmtldCUyMGNvbG9yZnVsfGVufDF8fHx8MTc2OTg2MzA5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      price: "$15-30",
-      category: "Food & Drink",
-      perfectFor: "Food Lovers, Home Cooks, Adventurous Eaters",
-      whyMeaningful:
-        "These authentic spice blends (Ras el Hanout, Chermoula) will let your loved ones recreate Moroccan flavors at home and think of your journey.",
-      whereToFind: "Souk Semmarine, Rahba Kedima spice square",
+        "src/app/pages/cofeearaku.jpeg",
+      price: "₹300-₹1200",
+      category: "Food & Beverages",
+      perfectFor: "Coffee Lovers, Friends, Office Colleagues",
+      whySpecial:
+        "Grown in the Eastern Ghats,Araku coffee is organically farmed and roasted fresh for a rich smooth flavour.",
       culturalNote:
-        "Moroccan spice blends are family secrets passed through generations - sharing them is sharing culinary heritage.",
+        "Cultivated by tribal communities using eco-friendly methods supported by cooperative socities.",
       difficulty: "Easy to find",
-      rating: 4.7,
-      loveFactor: 4,
+      rating: 4.8,
+      loveFactor: 5,
     },
   ];
 
@@ -219,7 +214,7 @@ export function SouvenirsPage() {
                   <Card className="overflow-hidden hover:shadow-2xl transition-shadow">
                     <div className="grid md:grid-cols-2 gap-0">
                       {/* Image */}
-                      <div className="relative h-80 md:h-auto">
+                      <div className="relative h-80 md:h-150">
                         <img
                           src={item.image}
                           alt={item.name}

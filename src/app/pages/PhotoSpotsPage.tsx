@@ -16,6 +16,7 @@ import {
   Bookmark,
   Share2,
   Navigation as NavigationIcon,
+  SunIcon,
 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -26,87 +27,88 @@ export function PhotoSpotsPage() {
   const photoSpots = [
     {
       id: "1",
-      location: "Eiffel Tower - Trocadéro Gardens",
-      city: "Paris, France",
+      location: "RK-Beach",
+      city: "Vizag, Andhra Pradesh",
       image:
-        "https://images.unsplash.com/photo-1658424680194-c50bf5316f97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlaWZmZWwlMjB0b3dlciUyMGdvbGRlbiUyMGhvdXIlMjBwaG90b2dyYXBoeXxlbnwxfHx8fDE3Njk4NjMwNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bestTime: "Golden Hour",
-      timeIcon: Sunset,
-      exactTime: "7:30 PM - 8:15 PM",
-      difficulty: "Easy",
-      crowdLevel: "High",
+        "src/app/pages/rk.jpeg",
+      bestTime: "Sunrise",
+      timeIcon: Sunrise,
+      exactTime: "5:30 AM - 7:00 AM",
+      difficulty: " Very Easy",
+      crowdLevel: "Moderate",
       tips: [
-        "Arrive 30 minutes early to secure your spot",
-        "Best photo from the fountains area",
-        "Bring a wide-angle lens for full tower view",
+        "Arrive 30 minutes early to secure the first light over the Bay of Bengal",
+        "Best photos near submarine Museum and Dolphin's Noise viewpoint",
+        "Bring a wide-angle lens for full beach and horizon shots",
       ],
       whySpecial:
-        "The golden hour light creates a magical glow on the Eiffel Tower, perfect for romantic shots.",
-      coordinates: "48.8629, 2.2877",
+        "The golden hour light creates a magical glow on the waves and coastline.",
+      coordinates: "17.7139, 83.3203",
       rating: 4.9,
     },
     {
       id: "2",
-      location: "Fushimi Inari Shrine - Torii Gates",
-      city: "Kyoto, Japan",
+      location: "Cabo de Rama Fort",
+      city: "South Goa, Goa",
       image:
-        "https://images.unsplash.com/photo-1649727986079-03ba68c5cf57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGVycnklMjBibG9zc29tJTIwdGVtcGxlJTIwamFwYW4lMjBzdW5yaXNlfGVufDF8fHx8MTc2OTg2MzA0NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bestTime: "Early Morning",
-      timeIcon: Sunrise,
-      exactTime: "6:00 AM - 7:30 AM",
-      difficulty: "Moderate",
+        "src/app/pages/goafort.jpeg",
+      bestTime: "Evening",
+      timeIcon: Sunset,
+      exactTime: "4:30 PM - 6:00 PM",
+      difficulty: "Easy",
       crowdLevel: "Low",
       tips: [
-        "Go early to avoid crowds - gates are stunning without people",
-        "Walk up to the middle section for dramatic perspective",
-        "Wear traditional kimono for authentic photos",
+        "Go early to get good place",
+        "Take photos during sunset time",
+        "Use wide camera mode",
+        "Stand safely away from the edge",
       ],
       whySpecial:
-        "Morning mist through the red torii gates creates an ethereal, mystical atmosphere.",
-      coordinates: "34.9671, 135.7727",
+        "Sunset light makes the sea and fort look very beautiful.",
+      coordinates: "15.0887, 73.9270",
       rating: 5.0,
     },
     {
       id: "3",
-      location: "Blue Dome Church - Oia",
-      city: "Santorini, Greece",
+      location: "Sam Sand Dunes",
+      city: "Jaisalmer, Rajasthan",
       image:
-        "https://images.unsplash.com/photo-1719607526486-96f27a995fcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYW50b3JpbmklMjBibHVlJTIwZG9tZSUyMHN1bnNldHxlbnwxfHx8fDE3Njk4NjMwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bestTime: "Sunset",
+        "src/app/pages/sandraj.jpeg",
+      bestTime: "Evening",
       timeIcon: Sunset,
-      exactTime: "7:00 PM - 8:00 PM",
-      difficulty: "Easy",
-      crowdLevel: "Very High",
+      exactTime: "5:30 PM - 6:45 PM",
+      difficulty: "Very Easy",
+      crowdLevel: "Moderate",
       tips: [
-        "Book a spot in a nearby café for guaranteed view",
-        "Alternative: shoot from the stairs below the church",
-        "Blue hour after sunset is equally stunning",
+        "Reach the dunes at least 30 minutes before sunset for best light",
+        "Shoot low angles for dramatic foreground textures",
+        "Include camel silhouettes for a classic Rajasthan vibe",
       ],
       whySpecial:
-        "The iconic blue dome against the pink and orange sunset sky is pure magic.",
-      coordinates: "36.4618, 25.3753",
+        "Iconic desert sundet in Rajastha with golden light, endless sand waves,and camel silhouettes",
+      coordinates: "26.9124, 70.9083",
       rating: 4.8,
     },
     {
       id: "4",
-      location: "Grand Canal - Rialto Bridge",
-      city: "Venice, Italy",
+      location: "Solang Valley View Point",
+      city: "Manali, Shimla",
       image:
-        "https://images.unsplash.com/photo-1660648128069-65699b10cd14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZW5pY2UlMjBjYW5hbCUyMGdvbGRlbiUyMGhvdXJ8ZW58MXx8fHwxNzY5ODYzMDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bestTime: "Blue Hour",
-      timeIcon: Moon,
-      exactTime: "8:30 PM - 9:15 PM",
-      difficulty: "Moderate",
-      crowdLevel: "Medium",
+        "src/app/pages/solang.jpeg",
+      bestTime: "Morning",
+      timeIcon: Sun,
+      exactTime: "8:00 AM - 10:00 AM",
+      difficulty: "Easy",
+      crowdLevel: "Moderate",
       tips: [
-        "Shoot from Riva del Vin for best bridge angle",
-        "Capture gondolas passing for dynamic shots",
-        "Long exposure makes the water look silky",
+        "Go early to avoid crowd",
+        "Capture photos of mountains and valleys",
+        "Use normal or wide camera",
       ],
       whySpecial:
-        "The illuminated bridge and reflections in the canal create a romantic, timeless scene.",
-      coordinates: "45.4380, 12.3358",
-      rating: 4.7,
+        "Peaceful place with village and mountains views and looks beautiful in winter season.",
+      coordinates: "32.2432, 77.1892",
+      rating: 5.0,
     },
   ];
 
@@ -214,7 +216,7 @@ export function PhotoSpotsPage() {
                 <Card className="overflow-hidden hover:shadow-2xl transition-shadow">
                   <div className="grid md:grid-cols-2 gap-0">
                     {/* Image */}
-                    <div className="relative h-80 md:h-auto">
+                    <div className="relative h-80 md:h-150">
                       <img
                         src={spot.image}
                         alt={spot.location}

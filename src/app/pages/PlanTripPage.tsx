@@ -258,16 +258,16 @@ export function PlanTripPage() {
 
                 <div className="flex gap-4">
                   <Button
-                    onClick={() => setStep(1)}
+                    onClick={() => setStep(2)}
                     variant="outline"
-                    className="w-full"
+                    className="w-40"
                     size="lg"
                   >
                     Back
                   </Button>
                   <Button
                     onClick={() => setStep(3)}
-                    className="w-full bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600"
+                    className="w-40 bg-gradient-to-r from-rose-500 to-orange-500"
                     size="lg"
                   >
                     Continue
@@ -340,14 +340,14 @@ export function PlanTripPage() {
                   <Button
                     onClick={() => setStep(2)}
                     variant="outline"
-                    className="w-full"
+                    className="w-40"
                     size="lg"
                   >
                     Back
                   </Button>
                   <Button
                     onClick={handleSubmit}
-                    className="w-full bg-gradient-to-r from-rose-500 to-orange-500 hover:from-rose-600 hover:to-orange-600"
+                    className="w-40 bg-gradient-to-r from-rose-500 to-orange-500"
                     size="lg"
                   >
                     Create My Itinerary

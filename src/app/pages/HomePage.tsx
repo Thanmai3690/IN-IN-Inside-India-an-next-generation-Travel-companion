@@ -264,7 +264,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Other Apps vs. TravelHeart
+              Other Apps vs. IN-IN
             </h2>
             <p className="text-xl text-gray-600">
               We don't just guide you somewhere — we help you feel the place ❤️
